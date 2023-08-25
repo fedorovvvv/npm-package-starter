@@ -1,18 +1,15 @@
-import typescript2 from 'rollup-plugin-typescript2'
 import path from 'path'
 import {globSync} from 'glob'
 import { defineConfig } from 'vite'
 import {name} from './package.json'
 import config from './config'
+import dts from 'vite-plugin-dts'
 
 const srcFiles = globSync(path.resolve(__dirname, 'src/**/*.{ts,js}+(|x)'))
 
 export default defineConfig({
     plugins: [
-        {
-            ...typescript2(),
-            apply: 'build',
-        }
+        dts()
     ],
     build: {
         minify: false,
