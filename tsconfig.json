@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+        "esModuleInterop": true,
+		"allowJs": true,
+		"checkJs": false,
+        "declaration": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"sourceMap": true,
+		"strict": true,
+		"module": "ESNext",
+		"target": "ESNext"
+	},
+    "include": [
+        "src"
+    ],
+    "exclude": ["dist", "node_modules"]
+}

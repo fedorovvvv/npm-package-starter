@@ -1,0 +1,40 @@
+{
+  "name": "npm-package-starter",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Create your own package!",
+  "files": ["dist"],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.cjs.js",
+      "require": "./dist/index.es.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedorovvvv/npm-package-starter.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Nikita Fedorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedorovvvv/npm-package-starter/issues"
+  },
+  "homepage": "https://github.com/fedorovvvv/npm-package-starter#readme",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "tslib": "^2.6.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  }
+}
